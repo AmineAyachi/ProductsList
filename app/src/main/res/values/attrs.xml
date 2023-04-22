@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="combo1" format="color|reference" />
+    <attr name="combo2" format="color|reference" />
+    <attr name="combo3" format="color|reference" />
+    <attr name="combo4" format="color|reference" />
+    <attr name="combo5" format="color|reference" />
+    <attr name="combo6" format="color|reference" />
+    <attr name="combo7" format="color|reference" />
+</resources>

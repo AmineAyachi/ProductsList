@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Application themes. -->
+
+    <!--    Gold theme -->
+    <style name="Theme.ProductsList" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="combo1">@color/combo1</item>
+        <item name="combo2">@color/combo2</item>
+        <item name="combo3">@color/combo3</item>
+        <item name="combo4">@color/combo4</item>
+        <item name="combo5">@color/combo5</item>
+        <item name="combo6">@color/combo6</item>
+        <item name="combo7">@color/combo7</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/combo3</item>
+        <item name="colorSecondaryVariant">@color/combo3</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorAccent">@color/combo3</item>
+    </style>
+
+</resources>

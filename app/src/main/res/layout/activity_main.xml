@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".core.ui.MainActivity">
+    <include
+        android:id="@+id/toolbar_fingerprint"
+        layout="@layout/toolbar"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/toolbar_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?combo2">
+
+            <RelativeLayout
+                android:id="@+id/topcardtop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/topcardtop">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ProgressBar
+                    android:id="@+id/loadingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/Theme.ProductsList"
+                    />
+                <RelativeLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/refresh_holder">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/error_image"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/nodata"
+                        />
+                    <TextView
+                        android:id="@+id/error_message"
+                        android:layout_below="@+id/error_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/internet_error"
+                        android:textColor="?combo7"
+                        android:textSize="16dp" />
+                    <Button
+                        android:id="@+id/refresh_btn"
+                        android:layout_below="@+id/error_message"
+                        android:background="@drawable/custom_button"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/mtext_color"
+                        android:textAllCaps="false"
+                        android:shadowColor="@android:color/transparent"
+                        android:padding="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refresh_button_text" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

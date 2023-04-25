@@ -1,8 +1,8 @@
-package com.productslist.core.ui.data.local.dao
+package com.productslist.core.data.local.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.productslist.core.ui.data.local.entities.Product
+import com.productslist.core.data.local.entities.Product
 
 @Dao
 interface ProductDao {

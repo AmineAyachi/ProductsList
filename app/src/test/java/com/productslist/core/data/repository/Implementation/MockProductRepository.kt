@@ -1,4 +1,4 @@
-package com.productslist.come.productslist.core.data.repository.Implementation
+package com.productslist.core.data.repository.Implementation
 
 import com.newsapp.core.util.Resource
 import com.productslist.core.data.remote.dto.responses.ProductsReviews

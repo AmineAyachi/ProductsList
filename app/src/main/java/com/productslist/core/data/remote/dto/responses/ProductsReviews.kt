@@ -1,4 +1,6 @@
-package com.productslist.core.domain.model
+package com.productslist.core.data.remote.dto.responses
+
+import com.productslist.core.domain.model.Review
 
 data class ProductsReviews(
     val product_id: Int,

@@ -1,4 +1,6 @@
 package com.productslist.core.domain.model
 
-class ImagesUrl {
-}
+data class ImagesUrl(
+    val small: String,
+    val large: String
+)

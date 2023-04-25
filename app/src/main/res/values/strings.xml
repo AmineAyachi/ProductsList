@@ -3,4 +3,6 @@
     <string name="hint_recherche_pv">Rechercher..</string>
     <string name="refresh_button_text">Actualiser</string>
     <string name="internet_error">Échec de la connexion.</string>
+    <string name="product_image">Image du produit</string>
+    <string name="comments">Commentaires : </string>
 </resources>

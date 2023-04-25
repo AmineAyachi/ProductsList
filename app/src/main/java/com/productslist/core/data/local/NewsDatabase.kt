@@ -5,8 +5,8 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.productslist.core.ui.data.local.dao.ProductDao
-import com.productslist.core.ui.data.local.entities.Product
+import com.productslist.core.data.local.dao.ProductDao
+import com.productslist.core.data.local.entities.Product
 
 
 @Database(

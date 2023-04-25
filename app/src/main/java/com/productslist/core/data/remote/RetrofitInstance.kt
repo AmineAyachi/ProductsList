@@ -3,7 +3,7 @@ package com.newsapp.core.data.remote
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.newsapp.core.util.Constants.Companion.BASE_URL
-import com.productslist.core.ui.data.remote.services.ProductService
+import com.productslist.core.data.remote.services.ProductService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

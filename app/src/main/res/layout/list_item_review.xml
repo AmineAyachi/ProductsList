@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent"
+    android:layout_margin="5dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:outlineAmbientShadowColor="@color/combo9"
+        android:outlineSpotShadowColor="@color/combo9"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?combo3"
+                ></RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/incentive_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="?combo2">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Anonyme"
+                    android:textSize="16dp"
+                    android:textColor="?combo3"
+                    />
+                <TextView
+                    android:id="@+id/reviw"
+                    android:layout_below="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textColor="?combo7"
+                    />
+                <RatingBar
+                    android:id="@+id/note"
+                    android:layout_below="@+id/reviw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:stepSize="0.1"
+                    android:isIndicator="true" />
+            </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

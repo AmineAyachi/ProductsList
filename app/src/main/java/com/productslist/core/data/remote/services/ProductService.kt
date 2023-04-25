@@ -1,17 +1,22 @@
-package com.productslist.core.ui.data.remote.services
+package com.productslist.core.data.remote.services
 
+
+
+import com.productslist.core.data.remote.dto.responses.ProductsReviews
+import com.productslist.core.domain.model.Product
+import com.productslist.core.domain.model.Review
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Query
+
 
 interface ProductService {
 
 
     @GET("items.json")
     suspend fun getProducts(
-    ): Response<News>
+    ): Response<List<Product>>
 
     @GET("reviews.json")
     suspend fun getReviews(
-    ): Response<News>
+    ): Response<List<ProductsReviews>>
 }

@@ -1,4 +1,8 @@
 package com.productslist
 
-class ProductsListApplication {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class ProductsListApplication : Application(){
 }
